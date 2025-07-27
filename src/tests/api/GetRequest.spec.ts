@@ -36,7 +36,7 @@ test(`Peforming a get call using path param `, { tag: '@API' }, async () => {
     expect(await resp1.status()).toBe(200);
     const res = await resp1.json();
 
-    const name = "Jim";
+    const name = "Mary";
     expect(res.firstname).toBe(name);
 
 });
