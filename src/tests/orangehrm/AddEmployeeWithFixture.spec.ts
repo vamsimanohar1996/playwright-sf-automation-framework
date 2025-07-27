@@ -5,7 +5,7 @@ import { AddEmployee } from '../../pages/orangehrm/AddEmployee';
 import { getRandomEmployeeDetails } from '../../testdata/random';
 
 
-test.only('Add Employee21', async ({ page, loginPage }) => {
+test('Add Employee21', async ({ page, loginPage }) => {
   await page.goto(Env.BASE_URL);
   await loginPage.loginToApplication(Env.USERNAME, Env.PASSWORD);
 

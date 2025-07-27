@@ -6,17 +6,17 @@ let baseRequestContext: APIRequestContext;
 
 
 
-// test.beforeAll("Setting up baseURL", async () => {
+test.beforeAll("Setting up baseURL", async () => {
 
-//     baseRequestContext = await request.newContext(
-//         {
-//             baseURL: 'https://restful-booker.herokuapp.com'
-//         }
-//     );
+    baseRequestContext = await request.newContext(
+        {
+            baseURL: 'https://restful-booker.herokuapp.com'
+        }
+    );
 
-// });
+});
 
-test.skip(`Peforming a get call `, { tag: '@API' }, async ({ }) => {
+test(`Peforming a get call `, { tag: '@API' }, async ({ }) => {
 
     const resp1 = await baseRequestContext.get(`/booking`);
     console.log(await resp1.json());
@@ -28,7 +28,7 @@ test.skip(`Peforming a get call `, { tag: '@API' }, async ({ }) => {
 });
 
 
-test.skip(`Peforming a get call using path param `, { tag: '@API' }, async () => {
+test(`Peforming a get call using path param `, { tag: '@API' }, async () => {
 
 
     const resp1 = await baseRequestContext.get(`/booking/1`);
@@ -42,7 +42,7 @@ test.skip(`Peforming a get call using path param `, { tag: '@API' }, async () =>
 });
 
 
-test.skip(`Peforming a get call using query params `, { tag: '@API' }, async () => {
+test(`Peforming a get call using query params `, { tag: '@API' }, async () => {
 
     const resp1 = await baseRequestContext.get(`/booking`, {
         params: {
@@ -56,7 +56,7 @@ test.skip(`Peforming a get call using query params `, { tag: '@API' }, async () 
 });
 
 
-test.only(`Demoblaze get produts`,{tag:"@API"}, async({request})=>{
+test(`Demoblaze get produts`,{tag:"@API"}, async({request})=>{
 
 
     const res1 = await request.get("https://api.demoblaze.com/entries")
