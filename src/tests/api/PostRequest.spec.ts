@@ -8,7 +8,7 @@ let firstname;
 let lastname;
 
 
-test(`Creating a booking entry and fetching the details using a GET request`,{tag : '@POST'},async({request})=>{
+test(`Creating a booking entry and fetching the details using a GET request`,{tag : '@API'},async({request})=>{
 
 
     const response = await request.post("https://restful-booker.herokuapp.com/booking",{

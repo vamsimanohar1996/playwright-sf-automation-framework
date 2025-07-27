@@ -13,6 +13,7 @@ interface PageFixtures {
 export const test = base.extend<PageFixtures>({
       loginPage: async ({page},use) =>{
         const loginPage = new LoginPage(page);
+        await loginPage.visitOrangeHRM();
         await loginPage.loginToApplication(Env.USERNAME, Env.PASSWORD);
         await use(loginPage);
     },

@@ -1,4 +1,5 @@
 import {Page, type Locator} from '@playwright/test'
+import { Env } from '@src/utils/Env';
 
 export class LoginPage {
     private readonly usernameInputbox: Locator;
@@ -12,6 +13,12 @@ export class LoginPage {
       this.usernameInputbox = this.page.getByRole('textbox', { name: 'Username' });
       this.passwordInputbox = this.page.getByRole('textbox', { name: 'Password' });
       this.loginButton = this.page.getByRole('button', { name: 'Login' });
+    }
+
+
+    async visitOrangeHRM()
+    {
+      await this.page.goto(Env.BASE_URL);
     }
   
     async loginToApplication(username: string, password: string) {
