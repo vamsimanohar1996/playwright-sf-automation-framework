@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "baseUrl": ".",                            
+      "paths": {
+        "@src/*": ["src/*"],
+        "@tests/*": ["tests/*"],
+        "@pages/*": ["src/pages/*"]
+      },
+      "esModuleInterop": true,
+      "strict": true,
+      "skipLibCheck": true
+    }
+  }
+  

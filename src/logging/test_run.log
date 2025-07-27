@@ -1,0 +1,8 @@
+2025-07-27T02:02:52+05:30 [info]: Logged into the Salesforce Applications
+2025-07-27T02:06:14+05:30 [info]: Logged into the Salesforce Applications
+2025-07-27T02:06:40+05:30 [error]: error clicking the  Ledfads object and the error : Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('link', { name: 'Ledfads' })[22m
+[2m    - waiting for" https://orgfarm-6798934e40-dev-ed.develop.my.salesforce.com/one/one.app" navigation to finish...[22m
+[2m    - navigated to "https://orgfarm-6798934e40-dev-ed.develop.lightning.force.com/one/one.app"[22m
+
