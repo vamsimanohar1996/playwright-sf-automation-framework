@@ -9,8 +9,10 @@ import { getRandomEmployeeDetails } from '../../testdata/random';
 
 
 test('Add Employee ',{tag: "@UI"}, async ({ page }) => {
-  await page.goto(Env.BASE_URL);
+ 
   const loginPage = new LoginPage(page);
+  
+  await loginPage.visitOrangeHRM();
   await loginPage.loginToApplication(Env.USERNAME, Env.PASSWORD);
 
   const homePage = new HomePage(page);
